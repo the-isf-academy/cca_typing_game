@@ -15,6 +15,12 @@ def print_slow(message,seconds):
 
 
 def calculate_wpm(user_typed_prompt, start_time, end_time):
+    '''To use function:
+    
+    total_wpm = calculate_wpm(user_typed_prompt, start_time, end_time)
+
+    '''
+
     # returns the number of words per minute
     # rounds wpm to 1 decimal point 
 
@@ -28,15 +34,22 @@ def calculate_wpm(user_typed_prompt, start_time, end_time):
 
 
 def calculate_accuracy(chosen_prompt, user_typed_prompt):
-    # returns the accuracy of the user's input as a decimal
-    # be sure to round the quotient to 1 decimal point
+    '''To use function:
+    
+    total_accuracy = calculate_accuracy(chosen_prompt, user_typed_prompt)
 
-    #### 💻 YOUR CODE GOES HERE 💻 ####
+    '''
 
+    total_chars = len(chosen_prompt)
+    correct_chars = 0
 
+    # loop through both strings
+    for char1, char2 in zip(chosen_prompt, user_typed_prompt):
+        if char1 == char2:
+            correct_chars += 1
 
-    return accuracy 
-
+    accuracy = (correct_chars / total_chars) * 100
+    return round(accuracy,1)
 
 
 

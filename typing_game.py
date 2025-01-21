@@ -22,13 +22,29 @@ print_slow("3...2...1!", .2)
 print("-"*30,"\n")
 
 
-#### 💻 YOUR CODE GOES HERE 💻 ####
-#### translate this pseudocode into Python code, feel to change it to make the most sense to you:
+#### 💻 COMPLETE THE TO DO ITEMS BELOW 💻 ####
 
-# initialize the variable chosen_prompt and store a random prompt from  prompt_list 
-# print chosen_prompt
-# initialize the variable start_time and store the current time 
-# initialize the variable user_input_prompt and store user input prompt typing attempt 
-# initialize the variable end_time and store the current time 
-# initialize the variable user_wpm and store the return value of calculated_wpm() 
-# print user_wpm
+# create the variable chosen_prompt and store a random prompt from  prompt_list 
+chosen_prompt = choice(prompt_list)
+
+# 💻 TO DO: print chosen_prompt
+
+
+# create the variable start_time and store the current time 
+start_time = time()
+
+
+
+# create the variable user_input_prompt and store user input prompt typing attempt 
+user_input_prompt = input("> ")
+
+
+# 💻 TO DO :create the variable end_time and store the current time 
+
+
+# create the variable total_wpm and store the return value of calculated_wpm() 
+# 💻 TO DO : remove the # from the line below when you have created the end_time variable
+#total_wpm = calculate_wpm(user_input_prompt, start_time, end_time)
+
+
+# 💻 TO DO : create the variable total_accuracy and store the return value of calculate_accuracy() 
